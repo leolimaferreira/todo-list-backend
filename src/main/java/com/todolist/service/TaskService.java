@@ -10,6 +10,7 @@ import com.todolist.repository.TaskRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.UUID;
 
@@ -33,7 +34,7 @@ public class TaskService {
     }
 
     public List<TaskSearchResponseDTO> getAllTasks() {
-        List<Task> tasks = taskRepository.findAll();
+        List<Task> tasks = taskRepository.findAllByOrderByDueDateAsc();
         return taskMapper.toTaskSearchResponseDTOList(tasks);
     }
 
@@ -41,6 +42,7 @@ public class TaskService {
         Task task = taskRepository.findById(id)
                 .orElseThrow(() -> new NotFoundException("Task not found"));
         taskMapper.updateTaskFromDTO(dto, task);
+        task.setUpdatedAt(LocalDateTime.now());
         taskRepository.save(task);
         return taskMapper.toTaskSearchResponseDTO(task);
     }

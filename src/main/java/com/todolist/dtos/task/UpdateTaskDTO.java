@@ -11,6 +11,7 @@ public record UpdateTaskDTO(
         @Size(min = 3, max = 255, message = "Description must be between 3 and 255 characters")
         String description,
         @FutureOrPresent(message = "Due date must be today or in the future")
-        LocalDate dueDate
+        LocalDate dueDate,
+        Boolean completed
 ) {
 }

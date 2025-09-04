@@ -21,5 +21,6 @@ public interface TaskMapper {
     List<TaskSearchResponseDTO> toTaskSearchResponseDTOList(List<Task> tasks);
 
     @BeanMapping(nullValuePropertyMappingStrategy = org.mapstruct.NullValuePropertyMappingStrategy.IGNORE)
-    Task updateTaskFromDTO(UpdateTaskDTO dto, @MappingTarget Task task);
+    @Mapping(target = "completed", source = "completed")
+    void updateTaskFromDTO(UpdateTaskDTO dto, @MappingTarget Task task);
 }
