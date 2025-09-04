@@ -5,6 +5,7 @@ import com.todolist.dtos.task.SaveTaskDTO;
 import com.todolist.dtos.task.TaskSearchResponseDTO;
 import com.todolist.dtos.task.UpdateTaskDTO;
 import com.todolist.service.TaskService;
+import jakarta.validation.Valid;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -22,7 +23,7 @@ public class TaskController implements GenericController {
     private final TaskService taskService;
 
     @PostMapping
-    public ResponseEntity<TaskSearchResponseDTO> save(@RequestBody SaveTaskDTO dto) {
+    public ResponseEntity<TaskSearchResponseDTO> save(@RequestBody @Valid SaveTaskDTO dto) {
         TaskSearchResponseDTO savedTask = taskService.saveTask(dto);
         URI location = generateHeaderLocation(savedTask.id());
         return ResponseEntity.created(location).body(savedTask);
@@ -39,7 +40,7 @@ public class TaskController implements GenericController {
     }
 
     @PutMapping("{id}")
-    public ResponseEntity<TaskSearchResponseDTO> update(@PathVariable("id") UUID id, @RequestBody UpdateTaskDTO dto) {
+    public ResponseEntity<TaskSearchResponseDTO> update(@PathVariable("id") UUID id, @RequestBody @Valid UpdateTaskDTO dto) {
         TaskSearchResponseDTO updatedTask = taskService.updateTask(id, dto);
         return ResponseEntity.ok(updatedTask);
     }

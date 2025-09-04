@@ -190,3 +190,83 @@
 2025-09-04T10:43:12.390-03:00  INFO 27632 --- [todo-list] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-09-04T10:43:12.395-03:00  INFO 27632 --- [todo-list] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2025-09-04T10:43:12.416-03:00  INFO 27632 --- [todo-list] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-04T10:51:59.091-03:00  INFO 16348 --- [todo-list] [main] com.todolist.ToDoListApplication         : Starting ToDoListApplication using Java 21.0.2 with PID 16348 (C:\ProjetosJava\todolist\target\classes started by l.g.dos.santos in C:\ProjetosJava\todolist)
+2025-09-04T10:51:59.093-03:00  INFO 16348 --- [todo-list] [main] com.todolist.ToDoListApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-09-04T10:51:59.156-03:00  INFO 16348 --- [todo-list] [main] .s.b.d.c.l.DockerComposeLifecycleManager : Using Docker Compose file C:\ProjetosJava\todolist\compose.yaml
+2025-09-04T10:52:04.778-03:00  INFO 16348 --- [todo-list] [main] .s.b.d.c.l.DockerComposeLifecycleManager : There are already Docker Compose services running, skipping startup
+2025-09-04T10:52:06.011-03:00  INFO 16348 --- [todo-list] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-04T10:52:06.081-03:00  INFO 16348 --- [todo-list] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interface.
+2025-09-04T10:52:06.587-03:00  INFO 16348 --- [todo-list] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-09-04T10:52:06.598-03:00  INFO 16348 --- [todo-list] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-04T10:52:06.598-03:00  INFO 16348 --- [todo-list] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-04T10:52:06.652-03:00  INFO 16348 --- [todo-list] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-04T10:52:06.652-03:00  INFO 16348 --- [todo-list] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1436 ms
+2025-09-04T10:52:06.891-03:00  INFO 16348 --- [todo-list] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-04T10:52:06.981-03:00  INFO 16348 --- [todo-list] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-04T10:52:07.041-03:00  INFO 16348 --- [todo-list] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-04T10:52:07.352-03:00  INFO 16348 --- [todo-list] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-04T10:52:07.394-03:00  INFO 16348 --- [todo-list] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-04T10:52:07.581-03:00  INFO 16348 --- [todo-list] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1d1cfe4
+2025-09-04T10:52:07.583-03:00  INFO 16348 --- [todo-list] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-04T10:52:07.643-03:00  INFO 16348 --- [todo-list] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-04T10:52:08.376-03:00  INFO 16348 --- [todo-list] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-04T10:52:08.376-03:00  INFO 16348 --- [todo-list] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-04T10:52:08.671-03:00  WARN 16348 --- [todo-list] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-04T10:52:09.134-03:00  INFO 16348 --- [todo-list] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-09-04T10:52:09.145-03:00  INFO 16348 --- [todo-list] [main] com.todolist.ToDoListApplication         : Started ToDoListApplication in 10.614 seconds (process running for 12.356)
+2025-09-04T10:52:32.076-03:00  INFO 16348 --- [todo-list] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-04T10:52:32.077-03:00  INFO 16348 --- [todo-list] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-04T10:52:32.079-03:00  INFO 16348 --- [todo-list] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-09-04T10:52:32.322-03:00  WARN 16348 --- [todo-list] [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 22001
+2025-09-04T10:52:32.322-03:00 ERROR 16348 --- [todo-list] [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: value too long for type character varying(50)
+2025-09-04T10:53:03.623-03:00  INFO 16348 --- [todo-list] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-04T10:53:03.632-03:00  INFO 16348 --- [todo-list] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-04T10:53:03.639-03:00  INFO 16348 --- [todo-list] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-04T10:53:03.641-03:00  INFO 16348 --- [todo-list] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-04T10:53:03.651-03:00  INFO 16348 --- [todo-list] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-04T10:53:08.225-03:00  INFO 9924 --- [todo-list] [main] com.todolist.ToDoListApplication         : Starting ToDoListApplication using Java 21.0.2 with PID 9924 (C:\ProjetosJava\todolist\target\classes started by l.g.dos.santos in C:\ProjetosJava\todolist)
+2025-09-04T10:53:08.231-03:00  INFO 9924 --- [todo-list] [main] com.todolist.ToDoListApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-09-04T10:53:08.301-03:00  INFO 9924 --- [todo-list] [main] .s.b.d.c.l.DockerComposeLifecycleManager : Using Docker Compose file C:\ProjetosJava\todolist\compose.yaml
+2025-09-04T10:53:14.001-03:00  INFO 9924 --- [todo-list] [main] .s.b.d.c.l.DockerComposeLifecycleManager : There are already Docker Compose services running, skipping startup
+2025-09-04T10:53:15.029-03:00  INFO 9924 --- [todo-list] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-04T10:53:15.082-03:00  INFO 9924 --- [todo-list] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interface.
+2025-09-04T10:53:15.661-03:00  INFO 9924 --- [todo-list] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-09-04T10:53:15.677-03:00  INFO 9924 --- [todo-list] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-04T10:53:15.677-03:00  INFO 9924 --- [todo-list] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-04T10:53:15.722-03:00  INFO 9924 --- [todo-list] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-04T10:53:15.722-03:00  INFO 9924 --- [todo-list] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1281 ms
+2025-09-04T10:53:15.974-03:00  INFO 9924 --- [todo-list] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-04T10:53:16.072-03:00  INFO 9924 --- [todo-list] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-04T10:53:16.120-03:00  INFO 9924 --- [todo-list] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-04T10:53:16.471-03:00  INFO 9924 --- [todo-list] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-04T10:53:16.502-03:00  INFO 9924 --- [todo-list] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-04T10:53:16.653-03:00  INFO 9924 --- [todo-list] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1d1cfe4
+2025-09-04T10:53:16.655-03:00  INFO 9924 --- [todo-list] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-04T10:53:16.714-03:00  INFO 9924 --- [todo-list] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-04T10:53:17.432-03:00  INFO 9924 --- [todo-list] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-04T10:53:17.432-03:00  INFO 9924 --- [todo-list] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-04T10:53:17.765-03:00  WARN 9924 --- [todo-list] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-04T10:53:18.274-03:00  INFO 9924 --- [todo-list] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-09-04T10:53:18.284-03:00  INFO 9924 --- [todo-list] [main] com.todolist.ToDoListApplication         : Started ToDoListApplication in 10.665 seconds (process running for 11.206)
+2025-09-04T10:53:35.171-03:00  INFO 9924 --- [todo-list] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-04T10:53:35.171-03:00  INFO 9924 --- [todo-list] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-04T10:53:35.171-03:00  INFO 9924 --- [todo-list] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-09-04T10:54:46.955-03:00  INFO 9924 --- [todo-list] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-04T10:54:46.967-03:00  INFO 9924 --- [todo-list] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-04T10:54:46.971-03:00  INFO 9924 --- [todo-list] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-04T10:54:46.975-03:00  INFO 9924 --- [todo-list] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-04T10:54:46.988-03:00  INFO 9924 --- [todo-list] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
