@@ -1,4 +1,4 @@
-package com.todolist.dtos;
+package com.todolist.dtos.task;
 
 import jakarta.validation.constraints.FutureOrPresent;
 import jakarta.validation.constraints.NotBlank;

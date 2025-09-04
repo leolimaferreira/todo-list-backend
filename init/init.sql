@@ -1,0 +1,9 @@
+CREATE TABLE tasks (
+    id UUID PRIMARY KEY,
+    title VARCHAR(50) NOT NULL,
+    description VARCHAR(255) UNIQUE NOT NULL,
+    completed BOOLEAN NOT NULL,
+    due_date DATE NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

@@ -1,4 +1,4 @@
-package com.todolist.dtos;
+package com.todolist.dtos.task;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
